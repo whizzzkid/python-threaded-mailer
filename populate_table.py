@@ -8,12 +8,8 @@ __author__ = "Nishant Arora (me@nishantarora.in)"
 # imports
 import MySQLdb
 
-# DB Constants
-DB_HOST = ''
-DB_USER = ''
-DB_PASS = ''
-DB_DABA = ''
-DB_TABL = ''
+# DB Constants, check db_config.py
+import db_config
 
 # Samples Count
 REQ_NUM_SAMPLES = 10000

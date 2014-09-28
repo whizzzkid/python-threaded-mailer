@@ -7,12 +7,8 @@ import MySQLdb
 import smtplib
 import threading
 
-# DB Constants
-DB_HOST = ''
-DB_USER = ''
-DB_PASS = ''
-DB_DABA = 'mailer'
-DB_TABL = 'mailing_list'
+# DB Constants, check db_config.py
+import db_config
 
 # Threading Config
 WORKER_THREAD_COUNT = 20
