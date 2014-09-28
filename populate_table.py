@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''Will help populate test database with sample data.
 The data should be in form of
 <id> + <test_name> + <test_email> + <default_status=0>
@@ -8,8 +9,12 @@ __author__ = "Nishant Arora (me@nishantarora.in)"
 # imports
 import MySQLdb
 
-# DB Constants, check db_config.py
-import db_config
+# DB Constants.
+DB_HOST = ''
+DB_USER = ''
+DB_PASS = ''
+DB_DABA = 'mailer'
+DB_TABL = 'mailing_list'
 
 # Samples Count
 REQ_NUM_SAMPLES = 10000

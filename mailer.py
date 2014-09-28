@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 '''Bulk mailing script, with multi threading.'''
 
 __author__ = "Nishant Arora (me@nishantarora.in)"
@@ -7,8 +8,12 @@ import MySQLdb
 import smtplib
 import threading
 
-# DB Constants, check db_config.py
-import db_config
+# DB Constants
+DB_HOST = ''
+DB_USER = ''
+DB_PASS = ''
+DB_DABA = 'mailer'
+DB_TABL = 'mailing_list'
 
 # Threading Config
 WORKER_THREAD_COUNT = 20
